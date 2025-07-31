@@ -190,28 +190,23 @@ p, li{
 
 /* BOTTOM3: CLIPS */
 
-#content-section-3{
+#content-section-3 {
   display: flex;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  background-color: rgb(200, 188, 102);
+  background-color: LightYellow;
+  padding: 40px 0;
 }
 
-#clip1{
-  border: 3px Solid rgb(250, 234, 142);
+#clip1,
+#clip2 {
+  border: 3px solid rgb(250, 234, 142);
   border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-#clip2{
-  border: 3px Solid rgb(250, 234, 142);
-  border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 
 /* OTHER STUFF */
 
