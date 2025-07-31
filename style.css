@@ -195,17 +195,17 @@ p, li{
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  background-color: LightYellow;
+  background-color: rgb(251, 246, 207);
   padding: 40px 0;
 }
 
 #clip1,
 #clip2 {
-  border: 3px solid rgb(250, 234, 142);
+  border: 3px solid rgb(96, 87, 36);
   border-radius: 20px;
   padding: 20px;
-  background-color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgb(189, 167, 60);
+  
 }
 
 /* OTHER STUFF */
