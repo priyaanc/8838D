@@ -188,6 +188,14 @@ p, li{
   padding-left: 40px;
 }
 
+#logo-img{
+  max-width: 100%;
+  border-radius: 20px;
+  height: 261px;
+  width: 474px;
+  border: 4px Solid SaddleBrown;
+}
+
 /* BOTTOM3: CLIPS */
 
 #content-section-3 {
@@ -201,22 +209,12 @@ p, li{
 
 #clip1,
 #clip2 {
-  border: 3px solid rgb(96, 87, 36);
+  border: 4px Solid SaddleBrown;
   border-radius: 20px;
-  padding: 20px;
-  background-color: rgb(189, 167, 60);
-  
+  max-width: 100%; 
 }
 
 /* OTHER STUFF */
-
-#logo-img{
-  max-width: 100%;
-  border-radius: 20px;
-  height: 261px;
-  width: 474px;
-  border: 4px Solid SaddleBrown;
-}
 
 #ball {
   width: 170px;
