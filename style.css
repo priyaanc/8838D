@@ -200,13 +200,13 @@ p, li{
 
 #clip1{
   padding: 20px;
-  border-color: 3px Solid rgb(248, 222, 74);
+  border: 3px Solid rgb(248, 222, 74);
   border-radius: 20px;
 }
 
 #clip2{
   padding: 20px;
-  border-color: 3px Solid rgb(248, 222, 74);
+  border: 3px Solid rgb(248, 222, 74);
   border-radius: 20px;
 }
 
