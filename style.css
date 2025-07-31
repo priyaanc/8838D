@@ -207,7 +207,15 @@ p, li{
   padding: 40px 0;
 }
 
-#clip1,
+#clip1{
+  border: 4px Solid SaddleBrown;
+  border-radius: 20px;
+  max-width: 100%; 
+  overflow: hidden;
+  padding: -10;
+  margin: 0;
+}
+
 #clip2 {
   border: 4px Solid SaddleBrown;
   border-radius: 20px;
