@@ -197,15 +197,16 @@ p, li{
   gap: 40px;
   flex-wrap: wrap;
   background-color: rgb(241, 232, 156);
-  text-align: center;
 }
 
 #clip1{
   padding: 20px;
+  text-align: center;
 }
 
 #clip2{
   padding: 20px;
+  text-align: center;
 }
 
 
