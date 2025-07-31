@@ -122,7 +122,7 @@ p, li{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px:
+  gap: 40px;
   flex-wrap: wrap;
   background-color: LemonChiffon;
 }
