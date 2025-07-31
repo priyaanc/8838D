@@ -212,6 +212,8 @@ p, li{
   border: 4px Solid SaddleBrown;
   border-radius: 20px;
   max-width: 100%; 
+  overflow: hidden;
+  padding: 0;
 }
 
 /* OTHER STUFF */
