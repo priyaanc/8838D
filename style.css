@@ -214,6 +214,8 @@ p, li{
   overflow: hidden;
   padding: -10;
   margin: 0;
+  height: auto;
+  width: auto;
 }
 
 #clip2 {
