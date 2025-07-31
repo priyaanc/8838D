@@ -201,7 +201,7 @@ p, li{
 #content-section-3 {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   flex-wrap: wrap;
   background-color: rgb(251, 246, 207);
   padding: 40px 0;
