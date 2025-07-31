@@ -192,21 +192,22 @@ p, li{
 
 #content-section-3{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  background-color: rgb(241, 232, 156);
+  background-color: rgb(246, 241, 201);
 }
 
 #clip1{
   padding: 20px;
-  text-align: center;
+  border-color: 3px Solid rgb(248, 222, 74);
+  border-radius: 20px;
 }
 
 #clip2{
   padding: 20px;
-  text-align: center;
+  border-color: 3px Solid rgb(248, 222, 74);
+  border-radius: 20px;
 }
 
 
