@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Team 8838D's Website</title>
+  </head>
+  
+  <body>
+    <div id="container">
+
+    <img id="ball" src="Images/push_back_ball.png" alt="ball">
+
+    <div id="top-section">       
+        <a href="index.html" class="nav-link current">Home</a>
+        <a href="CA.html" class="nav-link">Competitions & Awards</a>
+        <a href="RE.html" class="nav-link"> Our Robot & Evolution</a>
+    </div>
+
+    <div id="fade-divider1"></div>
+
+    <div id="middle-section">
+        <h1 id="title"> Team 8838D: Amirite</h1>
+        <img src="Images/logo.jpg" id="logo">
+    </div>
+
+    <div id="fade-divider2"></div>
+
+    <div id="content-section">
+      <div id="left-description">
+        <p id="exp">We are team <b>8838D, Amirite</b>, located in Irvine, California. We consist of 6 members and compete in the VEX V5 Robotics Competition. Our team has a wide array of different levels and experiences, from <b>no robotics experience at all</b> to our <b>second year of VRC</b>.  We aim to utilize all the strengths of each member to create one cohesive team. Our overall mission is to get to the <b>World Championship</b>, and to perform well at every single competition we go to. We all strive to do well this season and to <b>expand our knowledge in robotics</b>. Using our collaboration and innovation skills, we aim to do our best in the future competitions to come. We will persevere and overcome any challenge as a team. </p>
+      </div>
+
+      <div id="right-image">
+        <img src="Images/robot_bg.jpg" alt="Robot" id="homepage-img" class="glow-grow">
+      </div>
+
+    </div> 
+
+    <div id="content-section-2">
+
+      <div id="left-image">
+        <img id="logo-img" src="Images/VEX.png" alt"vex" class="glow-grow">
+      </div>
+
+      <div id="right-description">
+        <p>Our robot goals are to make sure the robot can…</p>
+	  <ul>
+ 	    <li>Score blocks on all goals <b>effectively and quickly</b></li>
+            <li>Perform autonomous routes that get us Win Point</li>
+            <li>Park, possibly double park, by the end of the season</li>
+            <li>Maneuver around the field <b>quickly and effectively</b></li>
+            <li>Maintain <b>balance</b> between offense and defense</li>
+          </ul>
+        <p>...this season!</p>
+     </div>
+
+   </div>   
+
+  </div>
+
+
+  <script>
+
+    $(document).ready(function () {
+      const screenWidth = $(window).width();            
+      const ballWidth = $('#ball').outerWidth(); 
+  
+      const maxLeft = screenWidth - ballWidth - 10;
+
+      const ballPosition = {
+        top: "200px",
+        left: maxLeft + "px"
+      };
+
+      $('#ball').addClass('spin');
+
+      $('#ball').delay(1000).animate(ballPosition, 2000, function () {
+        $(this).removeClass('spin').fadeOut();
+      });
+    });
+
+    $(document).ready(function () {
+      $('#container').hide();              
+      $('#container').delay(1000).fadeIn(1250); 
+    });
+
+  </script>
+
+  
+  </body>
+  
+</html>
