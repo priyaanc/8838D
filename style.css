@@ -116,7 +116,7 @@ p, li{
   background: linear-gradient(to bottom, Khaki, LemonChiffon);
 }
 
-/* BOTTOM: DESCRIPTION + IMAGE */
+/* BOTTOM1: DESCRIPTION + IMAGE */
 
 #content-section{
   display: flex;
@@ -155,6 +155,8 @@ p, li{
   border: 4px Solid SaddleBrown;
 }
 
+/* BOTTOM2: DESCRIPTION + IMAGE */
+
 #content-section-2{
   display: flex;
   justify-content: space-between;
@@ -186,6 +188,29 @@ p, li{
   padding-left: 40px;
 }
 
+/* BOTTOM3: CLIPS */
+
+#content-section-3{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: rgb(241, 232, 156);
+  text-align: center;
+}
+
+#clip1{
+  padding: 20px;
+}
+
+#clip2{
+  padding: 20px;
+}
+
+
+/* OTHER STUFF */
+
 #logo-img{
   max-width: 100%;
   border-radius: 20px;
@@ -193,8 +218,6 @@ p, li{
   width: 474px;
   border: 4px Solid SaddleBrown;
 }
-
-/* OTHER STUFF */
 
 #ball {
   width: 170px;
