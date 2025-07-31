@@ -207,12 +207,6 @@ p, li{
   padding: 40px 0;
 }
 
-#clip1div{
-  height: auto;
-  width: auto;
-  padding: 4px;
-}
-
 #clip1{
   border: 4px Solid SaddleBrown;
   border-radius: 20px;
