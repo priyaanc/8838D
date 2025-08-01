@@ -241,6 +241,12 @@ p, li{
   margin: 0;
 }
 
+#clip-text{
+  text-align: center;
+  font-size: 29px;
+  font-weight: 450;
+}
+
 /* OTHER STUFF */
 
 #ball {
