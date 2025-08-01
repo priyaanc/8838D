@@ -214,13 +214,13 @@ p, li{
 
 #clip1div{
   padding: 0px;
-  height: 400px;
+  height: 279px;
   width: 400px;
 }
 
 #clip2div{
   padding: 0px;
-  height: 400px;
+  height: 279px;
   width: 400px;
 }
 
@@ -243,8 +243,10 @@ p, li{
 
 #clip-text{
   text-align: center;
-  font-size: 29px;
-  font-weight: 450;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(106, 52, 13);
+  padding-top: 5px;
 }
 
 /* OTHER STUFF */
