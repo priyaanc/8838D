@@ -255,6 +255,7 @@ p, li{
   width: 170px;
   height: 140px;
   position: absolute;
+  z-index: 1000;
 }
 
 .glow-grow {
