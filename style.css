@@ -113,7 +113,7 @@ p, li{
 
 #fade-divider2{
   height: 3px;
-  background: linear-gradient(to bottom, Khaki, LemonChiffon);
+  background: linear-gradient(to bottom, Khaki, rgb(250, 243, 179));
 }
 
 /* BOTTOM1: DESCRIPTION + IMAGE */
@@ -124,7 +124,7 @@ p, li{
   align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
-  background-color: LemonChiffon;
+  background-color: rgb(250, 243, 179);
 }
 
 #left-description{
@@ -163,7 +163,7 @@ p, li{
   align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
-  background-color: LemonChiffon;
+  background-color: rgb(250, 243, 179);
 }
 
 #left-image{
@@ -196,6 +196,11 @@ p, li{
   border: 4px Solid SaddleBrown;
 }
 
+#fade-divider3{
+  height: 3px;
+  background: linear-gradient(to bottom, rgb(250,243,179), lemonchiffon);
+}
+
 /* BOTTOM3: CLIPS */
 
 #content-section-3 {
@@ -203,7 +208,7 @@ p, li{
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
-  background-color: rgb(251, 246, 207);
+  background-color: lemonchiffon;
   padding: 40px 0;
 }
 
