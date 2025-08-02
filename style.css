@@ -249,29 +249,32 @@ p, li{
   padding-top: 5px;
 }
 
-.carousel-container {
+.section-wrapper{
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel {
   display: flex;
   width: 600px;
   height: 300px;
+  background-color: #d2b48c;
   border-radius: 12px;
+  border: 4px solid #7c7210;
   overflow: hidden;
   position: relative;
 }
 
 .thumbnails {
   width: 100px;
-  background: #8f5505;
+  background: #d0bf6f;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   padding: 10px;
+  border-right: 2.5px solid #7c7210;
 }
 
 .thumbnails img {
@@ -294,7 +297,7 @@ p, li{
   position: relative;
 }
 
-.main-image img {
+.main-image img.carousel-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -306,7 +309,7 @@ p, li{
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.main-image img.active {
+.main-image img.carousel-img.active {
   opacity: 1;
   transform: translateX(0);
   z-index: 1;
