@@ -249,6 +249,12 @@ p, li{
   padding-top: 5px;
 }
 
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .carousel {
   display: flex;
   width: 600px;
@@ -260,7 +266,7 @@ p, li{
 
 .thumbnails {
   width: 100px;
-  background: #eee;
+  background: #8f5505;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,18 +310,6 @@ p, li{
   opacity: 1;
   transform: translateX(0);
   z-index: 1;
-}
-
-.arrow {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 40px;
-  color: white;
-  background: none;
-  cursor: pointer;
-  user-select: none;
 }
 
 /* OTHER STUFF */
