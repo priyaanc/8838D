@@ -208,7 +208,7 @@ p, li{
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
-  background-color: lemonchiffon;
+  animation: pulseBackground 3s infinite ease-in-out;
   padding: 40px 0;
 }
 
@@ -364,6 +364,12 @@ p, li{
   0%   { transform: translateX(0); }
   50%  { transform: translateX(-15px); }
   100% { transform: translateX(0); }
+}
+
+@keyframes pulseBackground {
+  0%   { background-color: rgb(255,250,205); }
+  50%  { background-color: rgb(251, 244, 180); }
+  100% { background-color: rgb(255,250,205); }
 }
 
 /* BROWSER WIDTH CODE */
