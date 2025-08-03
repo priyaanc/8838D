@@ -124,7 +124,7 @@ p, li{
   align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
-  background-color: rgb(250, 243, 179);
+  animation: pulseBackground1 3s infinite ease-in-out;
 }
 
 #left-description{
@@ -163,7 +163,7 @@ p, li{
   align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
-  background-color: rgb(250, 243, 179);
+  animation: pulseBackground1 3s infinite ease-in-out;
 }
 
 #left-image{
@@ -208,7 +208,7 @@ p, li{
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
-  animation: pulseBackground 3s infinite ease-in-out;
+  animation: pulseBackground2 3s infinite ease-in-out;
   padding: 40px 0;
 }
 
@@ -366,7 +366,13 @@ p, li{
   100% { transform: translateX(0); }
 }
 
-@keyframes pulseBackground {
+@keyframes pulseBackground1 {
+  0%   { background-color: rgb(250,243,179); }
+  50%  { background-color: rgb(249, 240, 156); }
+  100% { background-color: rgb(250,243,179); }
+}
+
+@keyframes pulseBackground2 {
   0%   { background-color: rgb(255,250,205); }
   50%  { background-color: rgb(251, 244, 180); }
   100% { background-color: rgb(255,250,205); }
