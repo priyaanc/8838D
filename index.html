@@ -4,6 +4,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel='stylesheet' href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Team 8838D's Website</title>
   </head>
@@ -42,7 +43,7 @@
     <div id="content-section-2">
 
       <div id="left-image">
-        <img id="logo-img" src="Images/VEX.png" alt"vex" class="glow-grow">
+        <img id="logo-img" src="Images/VEX.png" alt="vex" class="glow-grow">
       </div>
 
       <div id="right-description">
@@ -80,6 +81,7 @@
        <div class="carousel">
          <div class="thumbnails" id="thumbs"></div>
          <div class="main-image" id="main"></div>
+         <img src="Images/carousel.png" id="floatingCopy" alt="Floating Carousel" />
        </div>
      </div>
 
@@ -161,6 +163,31 @@
     slides[current].classList.add('active');
     thumbs[current].classList.add('active');
   }
+
+    const el = document.getElementById("floatingCopy");
+
+    gsap.set(el, { transformOrigin: "center center" });
+
+    gsap.to(el, {
+      duration: 4,
+      rotationY: 180,            // horizontal flip
+      opacity: 0,                // fade out at the end
+      ease: "power1.inOut",
+      scale: 1.2,
+      motionPath: {
+        path: [
+          { x: 0,   y: 0 },
+          { x: 150, y: -100 },
+          { x: 200, y: 0 },
+          { x: 150, y: 100 },
+          { x: 0,   y: 0 }
+        ],
+        autoRotate: false
+      },
+    onComplete: () => {
+      el.style.display = "none"; // completely hide after animation
+    }
+  })
 
 
   </script>
