@@ -322,6 +322,14 @@ p, li{
 /* 3RD PAGE- RE.HTML*/
 /* 4TH PAGE- CHATBOT.HTML*/
 
+  #aibot-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: pulseBackground1 3s infinite ease-in-out;
+    padding: 40px 0;
+  }
+
   .chat-container {
     background-color: #fff3b0;
     border: 2px solid #ffd700;

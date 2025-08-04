@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Team 8838D's Website</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
 
   <body>
     <div id="container">
+
+    <img id="ball" src="Images/push_back_ball.png" alt="ball">  
 
     <div id="top-section">       
         <a href="index.html" class="nav-link">Home</a>
@@ -26,14 +29,40 @@
 
     <div id="fade-divider2"></div>
 
-    <div class="chat-container">
-       <h1 id="chatbot-title">🤖 Ask Team 8838D!</h1>
-       <input type="text" id="question" placeholder="Type your question here..." />
-       <button onclick="getAnswer()">Ask</button>
-       <div id="answer"></div>
+    <div id="aibot-section">
+      <div class="chat-container">
+        <h1 id="chatbot-title">🤖 Ask Team 8838D!</h1>
+        <input type="text" id="question" placeholder="Type your question here..." />
+        <button onclick="getAnswer()">Ask</button>
+      <div id="answer"></div>
     </div>
 
    <script>
+
+    $(document).ready(function () {
+      const screenWidth = $(window).width();            
+      const ballWidth = $('#ball').outerWidth(); 
+  
+      const maxLeft = screenWidth - ballWidth - 10;
+
+      const ballPosition = {
+        top: "200px",
+        left: maxLeft + "px"
+      };
+
+      $('#ball').addClass('spin');
+
+      $('#ball').delay(1000).animate(ballPosition, 2000, function () {
+        $(this).removeClass('spin').fadeOut();
+      });
+    });
+
+    $(document).ready(function () {
+      $('#container').hide();              
+      $('#container').delay(1000).fadeIn(1250); 
+    });
+
+
     function getAnswer() {
       const q = document.getElementById("question").value.toLowerCase();
       const answerBox = document.getElementById("answer");
@@ -63,7 +92,7 @@
     }
 
    </script>
-   
+
 </body>
 
 </html>
