@@ -7,6 +7,41 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
+   <div class="chat-container">
+       <h1>🤖 Ask Team 8838D!</h1>
+       <input type="text" id="question" placeholder="Type your question here..." />
+       <button onclick="getAnswer()">Ask</button>
+       <div id="answer"></div>
+   </div>
+   <script>
+    function getAnswer() {
+      const q = document.getElementById("question").value.toLowerCase();
+      const answerBox = document.getElementById("answer");
+
+      // === CUSTOM QUESTIONS & ANSWERS ===
+      if (q.includes("how many awards") || q.includes("what awards")) {
+        answerBox.innerText = "🏆 Team 8838D has won 5 awards in the 2025-2026 season: 2x Tournament Champions, 2x Design Awards, and 1x Build Award.";
+      }
+
+      else if (q.includes("who is on the team")) {
+        answerBox.innerText = "👥 The 8838D team is made up of Priyaan, Ayaan, Leo, and Sofia.";
+      }
+
+      else if (q.includes("what is your robot name")) {
+        answerBox.innerText = "🤖 Our robot is named 'Vortex'.";
+      }
+
+      // === ADD YOUR OWN QUESTIONS BELOW ===
+      // else if (q.includes("your question keyword")) {
+      //   answerBox.innerText = "Your custom response!";
+      // }
+
+      // === DEFAULT MESSAGE ===
+      else {
+        answerBox.innerText = "❓ Hmm... I'm not sure about that. Try asking about our team, robot, or awards!";
+      }
+    }
+   </script>
 </body>
 
 </html>
