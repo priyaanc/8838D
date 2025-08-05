@@ -67,6 +67,8 @@
       const q = document.getElementById("question").value.toLowerCase();
       const answerBox = document.getElementById("answer");
 
+      let answerText = "";
+
       // === CUSTOM QUESTIONS & ANSWERS ===
       if (q.includes("how many awards") || q.includes("what awards") || q.includes("awards")) {
         answerBox.innerText = "🏆 Team 8838D has won 5 awards in the 2025-2026 season: 2x Tournament Champions, 2x Design Awards, and 1x Build Award.";
@@ -108,6 +110,11 @@
       else {
         answerBox.innerText = "❓ Hmm... I'm not sure about that. Try asking about our team, robot, or awards!";
       }
+
+      answerBox.classList.remove("animated-answer");
+      void answerBox.offsetWidth; // re-trigger animation
+      answerBox.innerText = answerText;
+      answerBox.classList.add("animated-answer");
     }
 
    </script>

@@ -377,6 +377,10 @@ p, li{
     border: 1px solid #f0d000;
   }
 
+  .animated-answer {
+    animation: fadeInSlideUp 0.4s ease-out;
+  }
+
 /* OTHER STUFF */
 
 #ball {
@@ -437,6 +441,17 @@ p, li{
   0%   { background-color: rgb(255,250,205); }
   50%  { background-color: rgb(251, 244, 180); }
   100% { background-color: rgb(255,250,205); }
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* BROWSER WIDTH CODE */
