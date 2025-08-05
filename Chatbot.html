@@ -111,9 +111,10 @@
         answerBox.innerText = "❓ Hmm... I'm not sure about that. Try asking about our team, robot, or awards!";
       }
 
+      answerBox.innerText = answerText;
+
       answerBox.classList.remove("animated-answer");
       void answerBox.offsetWidth; // re-trigger animation
-      answerBox.innerText = answerText;
       answerBox.classList.add("animated-answer");
     }
 
