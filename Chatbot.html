@@ -71,50 +71,49 @@
 
       // === CUSTOM QUESTIONS & ANSWERS ===
       if (q.includes("how many awards") || q.includes("what awards") || q.includes("awards")) {
-        answerBox.innerText = "🏆 Team 8838D has won 5 awards in the 2025-2026 season: 2x Tournament Champions, 2x Design Awards, and 1x Build Award.";
+        answerText = "🏆 Team 8838D has won 5 awards in the 2025-2026 season: 2x Tournament Champions, 2x Design Awards, and 1x Build Award.";
       }
 
       else if (q.includes("who is on the team") || q.includes("team members")) {
-        answerBox.innerText = "👥 Team 8838D is made up of Henry, Priyaan, Carlos, Jinay, Andrew, and Jeremiah.";
+        answerText = "👥 Team 8838D is made up of Henry, Priyaan, Carlos, Jinay, Andrew, and Jeremiah.";
       }
 
       else if (q.includes("team name")) {
-        answerBox.innerText = "🤖 Our team name is Amirite!";
+        answerText = "🤖 Our team name is Amirite!";
       }
 
       else if (q.includes("hi") || q.includes("what's up") || q.includes("hello")) {
-        answerBox.innerText = "Hello! Feel free to ask any qeustions about our team.";
+        answerText = "Hello! Feel free to ask any qeustions about our team.";
       }
 
       else if (q.includes("best accomplishment") || q.includes("worlds finalist") || q.includes("worlds accomplishments")) {
-        answerBox.innerText = "Team 8838D got to Worlds Finals last year. They won the Design Division with  Team 99397A, Irvine Riguan Bulldogs. They won Semis in dome and got close to becoming World Champions!";
+        answerText = "Team 8838D got to Worlds Finals last year. They won the Design Division with  Team 99397A, Irvine Riguan Bulldogs. They won Semis in dome and got close to becoming World Champions!";
       }
 
       else if (q.includes("skibidi") || q.includes("rizz") || q.includes("sigma")) {
-        answerBox.innerText = "NO BRAINROT!!";
+        answerText = "NO BRAINROT!!";
       }
 
       else if (q.includes("bruh") || q.includes("bro")) {
-        answerBox.innerText = "bruh:(";
+        answerText = "bruh:(";
       }
 
       else if (q.includes("chassis rpm") || q.includes("drivetrain") || q.includes("drivetrain rpm") || q.includes("chassis specifics")) {
-        answerBox.innerText = "We have a 6 wheel, 480 RPM Chassis (All Omni Wheels). Gear Ratio: 48:60, 600 RPM Cartridge";
+        answerText = "We have a 6 wheel, 480 RPM Chassis (All Omni Wheels). Gear Ratio: 48:60, 600 RPM Cartridge";
       }
 
       else if (q.includes("best team") || q.includes("goat")) {
-        answerBox.innerText = "8838D is obviously the GOAT (Greatest of all time) of robotics!";
+        answerText = "8838D is obviously the GOAT (Greatest of all time) of robotics!";
       }
 
   
       else {
-        answerBox.innerText = "❓ Hmm... I'm not sure about that. Try asking about our team, robot, or awards!";
+        answerBoxText = "❓ Hmm... I'm not sure about that. Try asking about our team, robot, or awards!";
       }
 
-      answerBox.innerText = answerText;
-
-      answerBox.classList.remove("animated-answer");
-      void answerBox.offsetWidth; // re-trigger animation
+      answerBox.classList.remove("animated-answer"); 
+      void answerBox.offsetWidth;
+      answerBox.innerText = answerText; 
       answerBox.classList.add("animated-answer");
     }
 
