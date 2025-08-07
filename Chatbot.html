@@ -98,7 +98,7 @@
         answerText = "bruh:(";
       }
 
-      else if (q.includes("chassis rpm") || q.includes("drivetrain") || q.includes("drivetrain rpm") || q.includes("chassis specifics")) {
+      else if (q.includes("chassis rpm") || q.includes("drivetrain") || q.includes("drivetrain rpm") || q.includes("chassis spec")) {
         answerText = "We have a 6 wheel, 480 RPM Chassis (All Omni Wheels). Gear Ratio: 48:60, 600 RPM Cartridge";
       }
 
@@ -106,9 +106,24 @@
         answerText = "8838D is obviously the GOAT (Greatest of all time) of robotics!";
       }
 
+      else if (q.includes("competitions") || q.includes("what comps") || q.includes("which comps") || q.includes("comps you are going to") || q.includes("comps this year")) {
+        answerText = "Team 8838D is so far registered for three competitions; their upcoming one is Robotics is ez Makerfaor compitition on September 13th";
+      }
+
+      else if (q.includes("intake")) {
+        answerText = "We have a ___ intake (we have not built it yet)";
+      }
+
+      else if (q.includes("motors") || q.includes("motor")) {
+        answerText = "We have 9 motors on our robot, adding up too 88 watts- Seven 11 watt motors, and Two 5.5 Watt motors";
+      }
+
+      else if (q.includes("")) {
+        answerText = "...Why didn't you type anything?";
+      }
   
       else {
-        answerText = "❓ Hmm... I'm not sure about that. Try asking about our team, robot, or awards!";
+        answerText = "❓ Hmm... I'm not sure about that. Try asking anything about our team!";
       }
 
       answerBox.classList.remove("animated-answer"); 
